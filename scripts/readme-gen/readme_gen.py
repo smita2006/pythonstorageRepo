@@ -32,6 +32,7 @@ jinja_env = jinja2.Environment(
 
 README_TMPL = jinja_env.get_template('README.tmpl.rst')
 # i am putting a sample comment to track git changes
+#now this code needs to be pulled into master
 
 def get_help(file):
     return subprocess.check_output(['python', file, '--help']).decode()
